@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@color/colorAccent"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryLightColor"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/txtNomeProdutoListaID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text=""
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                tools:layout_editor_absoluteX="4dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@id/txtNomeProdutoListaID"
+                android:background="@color/cardview_dark_background"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="44dp" />
+
+
+            <Button
+                android:id="@+id/btnAdicionarCarrinhoListaID"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ic_baseline_add_shopping_cart_24px"
+                tools:layout_editor_absoluteX="274dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <TextView
+                android:id="@+id/txtPesoProdutoListaID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtNomeProdutoListaID"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="2"
+                android:text=""
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/txtNomeMercadoListaID" />
+
+            <TextView
+                android:id="@+id/txtPrecoProdutoListaID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtNomeProdutoListaID"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:layout_toEndOf="@id/txtPesoProdutoListaID"
+                android:layout_weight="2"
+                android:text=""
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                 />
+
+            <TextView
+                android:id="@+id/txtNomeMercadoListaID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNomeProdutoListaID"
+                android:layout_toRightOf="@id/txtPrecoProdutoListaID"
+                android:layout_marginTop="5dp"
+                android:layout_weight="2"
+                android:text=""
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                tools:layout_editor_absoluteX="234dp"
+                tools:layout_editor_absoluteY="80dp" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

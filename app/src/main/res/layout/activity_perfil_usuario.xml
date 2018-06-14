@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.PerfilUsuarioActivity"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="122dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="22dp"
+        android:layout_marginTop="33dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnEditarPerfilID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_user" />
+
+    <EditText
+        android:id="@+id/txtPerNomeUsuarioID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="Seu nome"
+        app:layout_constraintBottom_toTopOf="@+id/txtPerEmailUsuarioID"
+        app:layout_constraintStart_toStartOf="@+id/txtPerEmailUsuarioID"
+        app:layout_constraintTop_toBottomOf="@+id/btnEditarPerfilID" />
+
+    <EditText
+        android:id="@+id/txtPerEmailUsuarioID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="Seu e-mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/txtPerSenhaUsuarioID"
+        app:layout_constraintStart_toStartOf="@+id/txtPerSenhaUsuarioID"
+        app:layout_constraintTop_toBottomOf="@+id/txtPerNomeUsuarioID" />
+
+    <EditText
+        android:id="@+id/txtPerSenhaUsuarioID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:hint="*******"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btnSalvarEdicaoID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPerEmailUsuarioID" />
+
+    <ImageButton
+        android:id="@+id/btnEditarPerfilID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="33dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtPerNomeUsuarioID"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <Button
+        android:id="@+id/btnSalvarEdicaoID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:text="Salvar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPerSenhaUsuarioID"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/btnTesteID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnEditarPerfilID"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+</android.support.constraint.ConstraintLayout>
